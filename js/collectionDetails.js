@@ -1,0 +1,1 @@
+alert("coming to you from collectionDetails.js");
