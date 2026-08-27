@@ -1,29 +1,33 @@
-{{#if singleWorkout.exercises}}
-
-  <table class="ui unstackable striped table">
-    <thead>
-      <tr>
-        <th>Exercise</th>
-        <th>title</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each singleWorkout.exercises}}
-        <tr>
-          <td>
-            {{Exercise}}
-          </td>
-          <td>
-            {{title}}
-          </td>
-        </tr>
-      {{/each}}
-    </tbody>
-  </table>
-
-  {{else}}
+<section class="ui left aligned middle aligned segment">
+  
+  <h2>Workout App Dashboard</h2>
+  
+  {{#unless workouts}}
     <h3 class="ui message">
-      Empty workout!
+      Start adding your workouts!
     </h3>
+  {{/unless}}
 
-{{/if}}
+  {{#each workouts}}
+    <section class="ui left aligned middle aligned segment">
+
+      <h3 class="ui header">
+        {{title}}
+      </h3>
+      
+      {{#if exercises}}
+        <p>
+          Total exercises: {{exercises.length}}
+        </p>
+      {{else}}
+        <p>
+          Empty workout!
+        </p>
+      {{/if}}
+	  <a href="/workout/{{id}}">
+	     <i class = "ui open folder outline black icon"></i>
+	  </a>
+    </section>
+  {{/each}}
+
+</section>

@@ -17,6 +17,15 @@ const WorkoutStore = {
     return this.store.findOneBy(this.collection, (workout => workout.id === id));
 },
 
+addExercise(id, exercise) {
+    this.store.addItem(this.collection, id, this.array, exercise);
+},
+
+addWorkout(workout) {
+    this.store.addCollection(this.collection, workout);
+},
+
+
 
 };
 

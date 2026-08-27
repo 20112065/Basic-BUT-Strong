@@ -1,131 +1,129 @@
 {
   "workoutCollection": [
     {
-      "id" : "01",
+      "id": "01",
       "title": "Workout 1.0",
       "Region": "Upper Body",
       "Exercises": [
         {
-          "id" : "04",
+          "id": "04",
           "exerciseName": "Bench Press",
-           "Weight": "50kg",
+          "Weight": "50kg",
           "Reps": 10,
           "sets": 3,
           "Rest": "2 minutes"
         },
-       {
-          "id" : "05",
+        {
+          "id": "05",
           "exerciseName": "Lat Pulldown",
           "Weight": "40kg",
           "Reps": 12,
           "sets": 3,
           "Rest": "1.5 minutes"
-
         },
-      {
-          "id" : "06",
+        {
+          "id": "06",
           "exerciseName": "Overhead Dumbbell Press",
-           "Weight": "20kg",
+          "Weight": "20kg",
           "Reps": 12,
           "sets": 3,
           "Rest": "1.5 minutes"
         },
         {
-          "id" : "07",
+          "id": "07",
           "exerciseName": "Seated Cable Row",
-           "Weight": "40kg",
+          "Weight": "40kg",
           "Reps": 12,
           "sets": 3,
           "Rest": "1.5 minutes"
         }
       ]
     },
-
-
     {
-      "id" : "02",
+      "id": "02",
       "title": "Workout 1.1",
       "Region": "Lower Body",
       "Exercises": [
         {
-          "id" : "08",
+          "id": "08",
           "exerciseName": "Barbell Hip Thrust",
-           "Weight": "50kg",
+          "Weight": "50kg",
           "Reps": 10,
           "sets": 3,
           "Rest": "2 minutes"
         },
-       {
-          "id" : "09",
+        {
+          "id": "09",
           "exerciseName": "Romanian Deadlifts",
-           "Weight": "40kg",
+          "Weight": "40kg",
           "Reps": 10,
           "sets": 3,
           "Rest": "2 minutes"
-
         },
-       {
-          "id" : "10",
+        {
+          "id": "10",
           "exerciseName": "Leg Press",
-           "Region": "Lower Body",
-           "Weight": "60kg",
+          "Region": "Lower Body",
+          "Weight": "60kg",
           "Reps": 12,
           "sets": 3,
-           "Rest": "1.5 minutes"
+          "Rest": "1.5 minutes"
         },
-           {
-          "id" : "11",
+        {
+          "id": "11",
           "exerciseName": "Leg Curls",
-           "Region": "Lower Body",
-           "Weight": "20kg",
+          "Region": "Lower Body",
+          "Weight": "20kg",
           "Reps": 12,
           "sets": 3,
-           "Rest": "1.5 minutes"
+          "Rest": "1.5 minutes"
         }
       ]
     },
-
-
     {
-      "id" : "03",
+      "id": "03",
       "title": "Workout 1.2",
       "Region": "Abs",
       "Exercises": [
         {
-          "id" : "12",
+          "id": "12",
           "exerciseName": "Hanging Leg Raises",
-           "Region": "Upper Body",
+          "Region": "Upper Body",
           "Weight": "Body Weight",
-          "Reps": 12,
-          "sets": 3,
-           "Rest": "1 minute"
-        
-        },
-        {
-          "id" : "13",
-          "exerciseName": "Cable Woodchoppers",
-           "Weight": "20kg",
           "Reps": 12,
           "sets": 3,
           "Rest": "1 minute"
         },
         {
-          "id" : "14",
-          "exerciseName": "Ab Wheel Rollouts",
-           "Weight": "N/A",
+          "id": "13",
+          "exerciseName": "Cable Woodchoppers",
+          "Weight": "20kg",
           "Reps": 12,
           "sets": 3,
-           "Rest": "1 minute"
+          "Rest": "1 minute"
         },
-           {
-          "id" : "15",
+        {
+          "id": "14",
+          "exerciseName": "Ab Wheel Rollouts",
+          "Weight": "N/A",
+          "Reps": 12,
+          "sets": 3,
+          "Rest": "1 minute"
+        },
+        {
+          "id": "15",
           "exerciseName": "Plank",
-           "Weight": "N/A",
+          "Weight": "N/A",
           "Reps": "60 seconds",
           "sets": 3,
-           "Rest": "1 minute"
+          "Rest": "1 minute"
         }
       ]
+    },
+    {
+      "id": "d2161809-4eb7-454c-9f45-a7861729f145",
+      "title": "hsh",
+      "exercises": []
     }
   ]
 }

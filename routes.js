@@ -18,6 +18,8 @@ router.get('/collectionDetails', collectionDetails.createView);
 router.get('/about', about.createView);
 router.get('/workout/:id', workout.createView);
 
+router.post('/workout/:id/addexercise', workout.addExercise);
+router.post('/dashboard/addworkout', dashboard.addWorkout);
 
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
 

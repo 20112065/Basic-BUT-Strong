@@ -1,9 +1,32 @@
 {{> menu}}
 
+
+{{#with singleWorkout}}
 <section class="ui center aligned middle aligned scrolling segment">
   <h2 class="ui header">
-   {{singleWorkout.title}}
+   {{title}}
   </h2>
    {{> listWorkouts}}
 </section>
-knk
+
+{{/with}}{{> menu}}
+
+{{#with singleWorkouts}}
+
+  <section class="ui center aligned middle aligned scrolling segment">
+
+    <h2 class="ui header">
+      {{title}}
+    </h2>
+
+    {{> listExercises}}
+
+  </section>
+
+  <section class="ui center aligned middle aligned segment">
+
+    {{> addExercises}}
+
+  </section>
+
+{{/with}}
