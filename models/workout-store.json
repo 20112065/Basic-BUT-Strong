@@ -1,0 +1,131 @@
+{
+  "workoutCollection": [
+    {
+      "id" : "01",
+      "title": "Workout 1.0",
+      "Region": "Upper Body",
+      "Exercises": [
+        {
+          "id" : "04",
+          "exerciseName": "Bench Press",
+           "Weight": "50kg",
+          "Reps": 10,
+          "sets": 3,
+          "Rest": "2 minutes"
+        },
+       {
+          "id" : "05",
+          "exerciseName": "Lat Pulldown",
+          "Weight": "40kg",
+          "Reps": 12,
+          "sets": 3,
+          "Rest": "1.5 minutes"
+
+        },
+      {
+          "id" : "06",
+          "exerciseName": "Overhead Dumbbell Press",
+           "Weight": "20kg",
+          "Reps": 12,
+          "sets": 3,
+          "Rest": "1.5 minutes"
+        },
+        {
+          "id" : "07",
+          "exerciseName": "Seated Cable Row",
+           "Weight": "40kg",
+          "Reps": 12,
+          "sets": 3,
+          "Rest": "1.5 minutes"
+        }
+      ]
+    },
+
+
+    {
+      "id" : "02",
+      "title": "Workout 1.1",
+      "Region": "Lower Body",
+      "Exercises": [
+        {
+          "id" : "08",
+          "exerciseName": "Barbell Hip Thrust",
+           "Weight": "50kg",
+          "Reps": 10,
+          "sets": 3,
+          "Rest": "2 minutes"
+        },
+       {
+          "id" : "09",
+          "exerciseName": "Romanian Deadlifts",
+           "Weight": "40kg",
+          "Reps": 10,
+          "sets": 3,
+          "Rest": "2 minutes"
+
+        },
+       {
+          "id" : "10",
+          "exerciseName": "Leg Press",
+           "Region": "Lower Body",
+           "Weight": "60kg",
+          "Reps": 12,
+          "sets": 3,
+           "Rest": "1.5 minutes"
+        },
+           {
+          "id" : "11",
+          "exerciseName": "Leg Curls",
+           "Region": "Lower Body",
+           "Weight": "20kg",
+          "Reps": 12,
+          "sets": 3,
+           "Rest": "1.5 minutes"
+        }
+      ]
+    },
+
+
+    {
+      "id" : "03",
+      "title": "Workout 1.2",
+      "Region": "Abs",
+      "Exercises": [
+        {
+          "id" : "12",
+          "exerciseName": "Hanging Leg Raises",
+           "Region": "Upper Body",
+          "Weight": "Body Weight",
+          "Reps": 12,
+          "sets": 3,
+           "Rest": "1 minute"
+        
+        },
+        {
+          "id" : "13",
+          "exerciseName": "Cable Woodchoppers",
+           "Weight": "20kg",
+          "Reps": 12,
+          "sets": 3,
+          "Rest": "1 minute"
+        },
+        {
+          "id" : "14",
+          "exerciseName": "Ab Wheel Rollouts",
+           "Weight": "N/A",
+          "Reps": 12,
+          "sets": 3,
+           "Rest": "1 minute"
+        },
+           {
+          "id" : "15",
+          "exerciseName": "Plank",
+           "Weight": "N/A",
+          "Reps": "60 seconds",
+          "sets": 3,
+           "Rest": "1 minute"
+        }
+      ]
+    }
+  ]
+}

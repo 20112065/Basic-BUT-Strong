@@ -1,0 +1,29 @@
+{{#if singleWorkout.exercises}}
+
+  <table class="ui unstackable striped table">
+    <thead>
+      <tr>
+        <th>Exercise</th>
+        <th>title</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each singleWorkout.exercises}}
+        <tr>
+          <td>
+            {{Exercise}}
+          </td>
+          <td>
+            {{title}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  {{else}}
+    <h3 class="ui message">
+      Empty workout!
+    </h3>
+
+{{/if}}

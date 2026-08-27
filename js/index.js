@@ -1,1 +1,0 @@
-alert("coming to you from index.js");

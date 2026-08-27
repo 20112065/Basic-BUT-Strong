@@ -1,0 +1,63 @@
+{{> menu id="dashboard"}}
+
+<section class="ui left aligned middle aligned segment">
+  
+  <h2>Workout App Dashboard</h2>
+
+  {{#unless workouts}}
+    <h3 class="ui message">
+      Start adding your workouts!
+    </h3>
+{{/unless}}
+
+  {{#each workouts}}
+  
+    <section class="ui left aligned middle aligned scrolling segment">
+
+      <h3 class="ui header">
+        {{title}}
+      </h3> 
+      
+     {{#if Exercises}}
+  <p>Total exercises: {{Exercises.length}}</p>
+{{else}}
+  <h3 class="ui message">
+    Empty workout!
+  </h3>
+{{/if}}    
+<a href="/workout/{{id}}">
+  <i class="folder open outline icon"></i>
+</a>
+  {{!--{{#if songs}}
+      <table class="ui unstackable striped table">
+        <thead>
+          <tr>
+            <th>Exercise</th>
+            <th>Set</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each exercises}}
+            <tr>
+              <td>
+                {{title}}
+              </td>
+              <td>
+                {{set}}
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      {{else}}
+
+    <h3 class="ui message">
+        Empty workout!
+    </h3>
+
+      {{/if}}
+    </section>
+  --}}
+
+</section>
+{{/each}} 

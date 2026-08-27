@@ -1,0 +1,32 @@
+{{> menu id="about"}}
+
+<section class="ui left aligned middle aligned segment">
+
+  <h2>About Basic BUT Strong</h2>
+  <p>
+    The purpose of this web application is to store workouts created by you, the user.
+  </p>
+
+
+<div class="ui centered card">
+  <div class="image">
+    <img src="{{emps.image}}">
+  </div>
+  <div class="content">
+    <a class="header">{{emps.fullname}}</a>
+    <div class="meta">
+      <span class="date">Joined in {{emps.joined}}</span>
+    </div>
+    <div class="description">
+      {{emps.name}} is an {{emps.job}} living in {{emps.city}}.
+    </div>
+  </div>
+  <div class="extra content">
+    <a>
+      <i class="user icon"></i>
+      {{emps.mates}} contacts
+    </a>
+  </div>
+</div>
+
+</section>

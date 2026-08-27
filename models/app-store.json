@@ -1,0 +1,17 @@
+{
+  "info": {
+    "appTitle": "Basic BUT Strong",
+    "version": 0.2,
+    "creators": [
+      {
+        "name": "Jimmy Flame",
+        "role": "Web Developer"
+      },
+      {
+        "name": "Lucy Loo",
+        "role": "Web Developer"
+      }
+    ],
+    "location": "Waterford"
+  } 
+}
