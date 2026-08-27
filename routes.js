@@ -10,18 +10,25 @@ import dashboard from './controllers/dashboard.js';
 import collectionDetails from './controllers/collectionDetails.js';
 import about from './controllers/about.js';
 import workout from './controllers/workout.js';
+import accounts from './controllers/account.js';
 
 
-router.get('/', start.createView);
+
+router.get('/start', start.createView);
 router.get('/dashboard', dashboard.createView);
 router.get('/collectionDetails', collectionDetails.createView);
 router.get('/about', about.createView);
 router.get('/workout/:id', workout.createView);
 router.get('/workout/:id/deleteexercise/:exerciseid', workout.deleteExercise);
 router.get('/dashboard/deleteworkout/:id', dashboard.deleteWorkout);
+router.get('/', accounts.index);
+router.get('/login', accounts.login);
+router.get('/signup', accounts.signup);
+router.get('/logout', accounts.logout);
 
 
-
+router.post('/register', accounts.register);
+router.post('/authenticate', accounts.authenticate);
 router.post('/workout/:id/addexercise', workout.addExercise);
 router.post('/dashboard/addworkout', dashboard.addWorkout);
 

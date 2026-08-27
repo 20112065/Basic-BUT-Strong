@@ -34,6 +34,17 @@ removeWorkout(id) {
     this.store.removeCollection(this.collection, workout);
 },
 
+getUserWorkouts(userid) {
+  return this.store.findBy(this.collection, (workout => workout.userid === userid));
+},
+
+searchUserWorkouts(search, userid) {
+  return this.store.findBy(
+    this.collection,
+    (workout => workout.userid === userid && workout.title.toLowerCase().includes(search.toLowerCase())))
+}, 
+
+
 
 
 };
