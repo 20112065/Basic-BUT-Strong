@@ -25,6 +25,15 @@ addWorkout(workout) {
     this.store.addCollection(this.collection, workout);
 },
 
+removeExercise(id, exerciseId) {
+    this.store.removeItem(this.collection, id, this.array, exerciseId);
+},
+
+removeWorkout(id) {
+    const workout = this.getWorkout(id);
+    this.store.removeCollection(this.collection, workout);
+},
+
 
 
 };

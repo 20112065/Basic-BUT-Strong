@@ -29,6 +29,14 @@ const dashboard = {
     response.redirect('/dashboard');
 },
 
+deleteWorkout(request, response) {
+    const workoutId = request.params.id;
+    logger.debug(`Deleting Workout ${workoutId}`);
+    workoutStore.removeWorkout(workoutId);
+    response.redirect("/dashboard");
+},
+
+
 };
 
 export default dashboard;

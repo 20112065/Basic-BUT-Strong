@@ -17,6 +17,10 @@ router.get('/dashboard', dashboard.createView);
 router.get('/collectionDetails', collectionDetails.createView);
 router.get('/about', about.createView);
 router.get('/workout/:id', workout.createView);
+router.get('/workout/:id/deleteexercise/:exerciseid', workout.deleteExercise);
+router.get('/dashboard/deleteworkout/:id', dashboard.deleteWorkout);
+
+
 
 router.post('/workout/:id/addexercise', workout.addExercise);
 router.post('/dashboard/addworkout', dashboard.addWorkout);

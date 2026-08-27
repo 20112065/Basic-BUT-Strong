@@ -29,6 +29,14 @@ const workout = {
     response.redirect('/workout/' + workoutId);
 },
 
+deleteExercise(request, response) {
+    const workoutId = request.params.id;
+    const exerciseId = request.params.exerciseid;
+    logger.debug(`Deleting Exercise ${exerciseId} from Workout ${workoutId}`);
+    workoutStore.removeExercise(workoutId, exerciseId);
+    response.redirect('/workout/' + workoutId);
+},
+
 };
 
 export default workout;
