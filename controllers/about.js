@@ -12,7 +12,7 @@ const about = {
       const viewData = {
       title: "About Basic BUT Strong",
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-        employees: empStore.getEmployees(),
+        employees: empStore.getEmpInfo(),
       };
     response.render('about', viewData); 
   }
