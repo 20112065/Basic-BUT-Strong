@@ -1,7 +1,7 @@
 'use strict';
 
 import logger from '../utils/logger.js';
-import userStore from '../models/user-store.js';
+import userStore from '../models/user-Store.js';
 import { v4 as uuidv4 } from 'uuid';
 
 
