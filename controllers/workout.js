@@ -25,8 +25,11 @@ const workout = {
     const workout = workoutStore.getWorkout(workoutId);
     const newExercise = {
       id: uuidv4(),
-      title: request.body.title,
       exercise: request.body.exercise,
+      weight: request.body.weight,
+      sets: request.body.sets,
+      reps: request.body.reps,
+      equipment: request.body.equipment,
     };
     workoutStore.addExercise(workoutId, newExercise);
     response.redirect('/workout/' + workoutId);

@@ -7,7 +7,7 @@ const WorkoutStore = {
 
   store: new JsonStore('./models/workout-store.json', { workoutCollection: [] }),
   collection: 'workoutCollection',
-  array: 'Workouts',
+  array: 'exercises',
 
   getAllWorkouts() {
     return this.store.findAll(this.collection);

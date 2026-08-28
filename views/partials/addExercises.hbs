@@ -1,15 +1,38 @@
 <form class="ui stacked segment form" action="/workout/{{id}}/addexercise" method="POST">
   <div class="two fields">
-    <div class="field">
-      <label>Title</label>
-      <input type="text" name="" autofocus required title = "Please include a valid Title"
-	  placeholder="Title">
-    </div>
+
     <div class="field">
       <label>Exercise</label>
-      <input type="text" name="exercise" required title = "Please include a valid Exercise"
-	  placeholder="Exercise"  >
+	  <input type="text" name="exercise" autofocus required title = "Please include a valid Exercise"
+	  placeholder="eg. Bench Press"  >
     </div>
+
+      <div class="field">
+      <label>Weight</label>
+      <input type="number" name="weight" required title = "Please include a valid Weight"
+	  placeholder="eg. 100kg"  >
+    </div>
+
+      <div class="field">
+      <label>sets</label>
+      <input type="number" name="sets" required title = "Please include a valid Number of Sets"
+	  placeholder="eg. 3"  >
+    </div>
+
+     <div class="field">
+      <label>reps</label>
+      <input type="number" name="reps" required title = "Please include a valid Number of Reps"
+	  placeholder="eg. 10"  >
+    </div>
+
+     <div class="field">
+      <label>Equipment</label>
+      <input type="text" name="equipment" required title = "Please include a valid Equipment"
+	  placeholder="eg. Barbell"  >
+    </div>
+    
+
+
   </div>
   <button class="ui blue submit button">Add Exercise</button>
 </form>

@@ -4,17 +4,29 @@
     <thead>
       <tr>
         <th>Exercise</th>
-        <th>title</th>
+        <th>Weight</th>
+        <th>Sets</th>
+        <th>Reps</th>
+        <th>Equipment</th>
       </tr>
     </thead>
     <tbody>
-      {{#each singleWorkout.exercises}}
+      {{#each exercises}}
         <tr>
           <td>
-            {{Exercise}}
+            {{exercise}}
           </td>
           <td>
-            {{title}}
+            {{weight}}
+          </td>
+          <td>
+            {{sets}}
+          </td>
+          <td>
+            {{reps}}
+          </td>
+          <td>
+            {{equipment}}
           </td>
           <td class="center aligned">
     <a href="/workout/{{../id}}/deleteexercise/{{id}}" 

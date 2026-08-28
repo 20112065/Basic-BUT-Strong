@@ -8,9 +8,128 @@ html {
 }
 
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
-  background-color: lightgrey;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  color: #f4f7f2;
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #101613;
+}
+
+.ui.container {
+  max-width: 1100px;
+}
+
+.ui.menu {
+  margin-bottom: 1.5rem;
+  border: 1px solid #34423a;
+  border-radius: 6px;
+  background-color: #18201d;
+}
+
+.ui.menu .item,
+.ui.menu .header.item,
+.ui.menu a.item {
+  color: #aab6ad !important;
+  font-weight: 600;
+}
+
+.ui.menu .header.item,
+.ui.menu .header.item a {
+  color: #b7e35b !important;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.ui.menu .item:hover,
+.ui.menu .active.item {
+  color: #f4f7f2 !important;
+  background-color: #26352d !important;
+}
+
+.ui.segment,
+.ui.card {
+  border: 1px solid #34423a;
+  border-radius: 6px;
+  color: #f4f7f2;
+  background-color: #18201d;
+}
+
+.ui.segment h2,
+.ui.segment h3,
+.ui.card .header {
+  color: #f4f7f2 !important;
+  text-transform: uppercase;
+}
+
+.ui.segment h2 {
+  font-size: 2rem;
+}
+
+.ui.segment p,
+.ui.card .description,
+.ui.card .meta {
+  color: #aab6ad !important;
+}
+
+.ui.form .field > label {
+  color: #aab6ad;
+  text-transform: uppercase;
+}
+
+.ui.form input {
+  border: 1px solid #34423a !important;
+  color: #f4f7f2 !important;
+  background-color: #101613 !important;
+}
+
+.ui.form input:focus {
+  border-color: #b7e35b !important;
+}
+
+.ui.button {
+  border-radius: 4px;
+  color: #101613 !important;
+  background-color: #b7e35b !important;
+  font-weight: 700;
+}
+
+.ui.button:hover {
+  background-color: #8fbd35 !important;
+}
+
+.ui.table {
+  color: #f4f7f2;
+}
+
+.ui.table thead th {
+  color: #b7e35b;
+  background-color: #202b26;
+  text-transform: uppercase;
+}
+
+.ui.table td {
+  color: #aab6ad;
+  border-color: #34423a !important;
+}
+
+.ui.icon,
+.ui.black.icon {
+  color: #e2f7a5 !important;
+}
+
+.ui.statistics .icon {
+  color: #f5f9e9 !important;
+}
+
+.ui.statistics .label {
+  color: #dce8d8 !important;
+}
+
+.ui.message {
+  color: #aab6ad;
+  border: 1px solid #34423a;
+  background-color: #202b26;
 }
 
 
