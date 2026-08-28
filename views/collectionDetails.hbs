@@ -1,0 +1,27 @@
+{{> menu id="collectionDetails"}}
+
+<section class="ui left aligned middle aligned segment">
+  <h2>Collection Details</h2>
+
+  {{#unless workouts}}
+    <h3 class="ui message">
+      No workouts have been created yet.
+    </h3>
+  {{/unless}}
+
+  {{#each workouts}}
+    <section class="ui segment">
+      <h3 class="ui header">{{title}}</h3>
+
+      {{#if exercises}}
+        <p>Total exercises: {{exercises.length}}</p>
+      {{else}}
+        <p>Empty workout!</p>
+      {{/if}}
+
+      <a href="/workout/{{id}}">
+        <i class="ui open folder outline icon"></i>
+      </a>
+    </section>
+  {{/each}}
+</section>

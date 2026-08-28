@@ -68,7 +68,7 @@ const dashboard = {
      const newWorkout = {
       userid: loggedInUser.id,
       id: uuidv4(),
-      title: request.body.title,
+      title: request.body.workoutName,
       rating: parseInt(request.body.rating),
       exercises: [],
       date: timestamp

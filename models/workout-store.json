@@ -1,21 +1,3 @@
 {
-  "workoutCollection": [
-    {
-      "userid": "6fbd2157-0190-44e9-805c-0124c38c3b79",
-      "id": "9958d65d-3f18-4a2f-b44a-5b28be760fec",
-      "title": "upperbody",
-      "rating": null,
-      "exercises": [
-        {
-          "id": "4a7d960c-c2de-4a36-ab7b-3310cf0a99e7",
-          "exercise": "benmch press",
-          "weight": "100",
-          "sets": "3",
-          "reps": "10",
-          "equipment": "barbell"
-        }
-      ],
-      "date": "2026-08-27T23:58:52.577Z"
-    }
-  ]
+  "workoutCollection": []
 }
