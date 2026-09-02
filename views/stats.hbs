@@ -1,0 +1,50 @@
+{{> menu id="stats"}}
+
+<section class="ui center aligned middle aligned segment">
+
+  <h2>Basic BUT Strong Statistics</h2>
+
+  <h3 class="ui header">
+    App Statistics
+  </h3>
+  <p>
+    The workout app now contains: 
+  </p>
+  {{#with stats}}
+   <div class="ui center aligned grid">
+    
+    <div class = "ui sixteen wide column">
+      
+        <div class="ui centered three statistics">
+          <div class="ui statistic">
+            <div class="value">
+              <i class="barbell icon" aria-hidden="true"></i>
+            </div>
+            <div class="label">
+              {{displayNumWorkouts}} workouts
+            </div>
+          </div>
+
+          <div class="ui red statistic">
+            <div class="value">
+              <i class="dumbbell icon" aria-hidden="true"></i>
+            </div>
+            <div class="label">
+              {{displayNumExercises}} exercises
+            </div>
+          </div> 
+		  
+          <div class="ui blue statistic">
+            <div class="value">
+              <i class="chart bar icon" aria-hidden="true"></i>
+            </div>
+            <div class="label">
+              Average exercises per <br> workout: {{displayAverage}}
+            </div>
+          </div>    
+		  
+        </div> 
+    </div>
+   </div>   
+  {{/with}}
+</section>
