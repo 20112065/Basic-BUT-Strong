@@ -25,6 +25,9 @@ router.get('/', accounts.index);
 router.get('/login', accounts.login);
 router.get('/signup', accounts.signup);
 router.get('/logout', accounts.logout);
+router.get('/searchCategory', dashboard.createView);
+router.get('/sortData', dashboard.createView);
+
 
 
 router.post('/register', accounts.register);

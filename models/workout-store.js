@@ -44,6 +44,11 @@ searchUserWorkouts(search, userid) {
     (workout => workout.userid === userid && workout.title.toLowerCase().includes(search.toLowerCase())))
 }, 
 
+searchWorkout(search) {
+    return this.store.findBy(
+      this.collection,
+      (workout => workout.title.toLowerCase().includes(search.toLowerCase())))
+},
 
 
 
